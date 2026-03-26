@@ -170,7 +170,7 @@ df_result = df_merged[['area','date','time','score']]
 df_result.set_index(['area'],inplace=True)
 df_result['score'] = round(df_result['score'], 3)  
 # 输出结果
-# df_result.to_csv("C:/Users/19124/Desktop/OUTPUT/AUP_results.txt",header = True,encoding = 'gbk')
+df_result.to_csv("AUP_results.txt",header = True,encoding = 'gbk')
 print("活动当天各时段的参与度得分:")
 print(df_merged[['area','date','time', 'score']])
 
